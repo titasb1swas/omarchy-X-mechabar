@@ -17,8 +17,7 @@
     "custom/right_div#1",
     "custom/right_inv#1",
     "clock#time",
-    "custom/right_div#2",
-    "custom/right_inv#100"
+    "custom/right_div#2"
   ],
   "modules-right": [
     "group/tray-expander",
