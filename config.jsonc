@@ -5,7 +5,17 @@
   "spacing": 0,
   "height": 24,
   "modules-left": ["custom/omarchy", "hyprland/workspaces", "hyprland/workspaces#count"],
-  "modules-center": ["custom/distro", "clock", "custom/weather", "custom/update", "custom/voxtype", "custom/screenrecording-indicator", "custom/idle-indicator", "custom/notification-silencing-indicator"],
+  "modules-center": [
+    "custom/left_div#1",
+    "memory",
+    "custom/left_inv#1",
+    "custom/left_div#2",
+    "custom/distro",
+    "custom/right_div#1",
+    "custom/right_inv#1",
+    "clock#time",
+    "custom/right_div#2"
+  ],
   "modules-right": [
     "group/tray-expander",
     "bluetooth",
@@ -216,5 +226,48 @@
   "tray": {
     "icon-size": 12,
     "spacing": 17
+  },
+  "memory": {
+    "interval": 10,
+    "format": "󰘚 {percentage}%",
+    "format-warning": "󰀧 {percentage}%",
+    "format-critical": "󰀧 {percentage}%",
+    "states": {
+      "warning": 75,
+      "critical": 90
+    },
+    "min-length": 7,
+    "max-length": 7,
+    "tooltip-format": "Memory Used: {used:0.0f}/{total:0.0f} GiB"
+  },
+  "clock#time": {
+    "format": "{:%H:%M}",
+    "min-length": 5,
+    "max-length": 5,
+    "tooltip-format": "<b>Standard Time</b>: <span text_transform='lowercase'>{:%I:%M %p}</span>"
+  },
+  "custom/left_div#1": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/left_div#2": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/right_div#1": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/right_div#2": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/left_inv#1": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/right_inv#1": {
+    "format": "",
+    "tooltip": false
   }
 }
