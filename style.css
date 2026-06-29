@@ -3,7 +3,7 @@
 
 * {
   background-color: rgba(30, 30, 46, .1);
-  color: @foreground;
+  color: @accent;
 
   border: none;
   border-radius: 0;
@@ -17,13 +17,9 @@
 -----------------*/
 
 #custom-distro {
-  background-color: @accent;
-  color: @base;
+  color: @accent;
   padding: 0 10px 0 5px;
-}
-
-#pulseaudio {
-  color: #ffb86c; /* Warm Orange */
+  font-size: 16px;
 }
 
 .modules-left {
